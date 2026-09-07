@@ -91,19 +91,21 @@
       background: var(--card); border: 1px solid var(--line); border-radius: 14px;
       padding: 34px 30px; box-shadow: 0 2px 10px rgba(19, 41, 75, 0.05);
     }
-    .card .badge {
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 52px; height: 52px; border-radius: 12px; margin-bottom: 18px;
-      font-weight: 800; font-size: 1.3rem; color: #fff;
+    .card .product-logo {
+      height: 84px; width: auto; max-width: 100%; object-fit: contain;
+      display: block; margin-bottom: 18px;
     }
-    .badge.afripraat { background: linear-gradient(135deg, #1d5c46, #3fa37c); }
-    .badge.educlicklab { background: linear-gradient(135deg, var(--navy), var(--blue-light)); }
     .card h3 { color: var(--navy); font-size: 1.25rem; margin-bottom: 8px; }
     .card p { color: var(--muted); font-size: 0.98rem; }
     .card .tag {
       display: inline-block; margin-top: 18px; font-size: 0.78rem; font-weight: 600;
       color: var(--blue); background: #edf3fa; border-radius: 999px; padding: 4px 12px;
     }
+    .card .site-link {
+      display: inline-block; margin-top: 12px; font-size: 0.92rem; font-weight: 600;
+      color: var(--blue); text-decoration: none;
+    }
+    .card .site-link:hover { text-decoration: underline; }
 
     .contact .panel {
       margin-top: 30px; background: var(--card); border: 1px solid var(--line);
@@ -169,16 +171,18 @@
         <h2>Products</h2>
         <div class="grid">
           <div class="card">
-            <div class="badge afripraat">A</div>
+            <img class="product-logo" src="assets/afripraat-logo.png" alt="Afripraat logo">
             <h3>Afripraat</h3>
-            <p>An app built around Afrikaans language and communication — helping users engage with the language in an accessible, modern way.</p>
-            <span class="tag">Language</span>
+            <p>An Afrikaans learning app for Grade 4–12 First Additional Language learners. Learners type every word, building vocabulary and grammar — from STOMPI word order to the double negative — with free classroom tools for teachers.</p>
+            <span class="tag">Language learning</span><br>
+            <a class="site-link" href="https://afripraat.co.za" target="_blank" rel="noopener">afripraat.co.za →</a>
           </div>
           <div class="card">
-            <div class="badge educlicklab">E</div>
-            <h3>Educlicklab</h3>
-            <p>An education technology product that makes learning interactive and engaging, giving learners and educators practical digital tools.</p>
-            <span class="tag">Education</span>
+            <img class="product-logo" src="assets/educlicklab-logo.png" alt="EduClickLab logo">
+            <h3>EduClickLab</h3>
+            <p>School admin, simplified. An AI-powered suite that brings everyday school tasks into one place — report comments, duty rosters, substitution and invigilation timetables, attendance and more.</p>
+            <span class="tag">Education admin</span><br>
+            <a class="site-link" href="https://educlicklab.co.za" target="_blank" rel="noopener">educlicklab.co.za →</a>
           </div>
         </div>
       </div>
